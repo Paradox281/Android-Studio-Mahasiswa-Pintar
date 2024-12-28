@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigasi_utama"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.semenam.mahasiswapintar.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_tampilMahasiswaFragment"
+            app:destination="@id/tampilMahasiswaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_tampilJurusanFragment"
+            app:destination="@id/tampilJurusanFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_tampilMataKuliahFragment"
+            app:destination="@id/tampilMataKuliahFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_about_Me"
+            app:destination="@id/about_Me" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tampilMahasiswaFragment"
+        android:name="com.semenam.mahasiswapintar.CRUD_Mahasiswa.Tampil_Mahasiswa"
+        android:label="fragment_tampil_mahasiswa"
+        tools:layout="@layout/fragment_tampil__mahasiswa" >
+        <action
+            android:id="@+id/action_tampilMahasiswaFragment_to_tambahMahasiswaFragment"
+            app:destination="@id/tambahMahasiswaFragment" />
+        <action
+            android:id="@+id/action_tampilMahasiswaFragment_to_detailMahasiswaFragment"
+            app:destination="@id/detailMahasiswaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tambahMahasiswaFragment"
+        android:name="com.semenam.mahasiswapintar.CRUD_Mahasiswa.TambahMahasiswa"
+        android:label="fragment_tambah_mahasiswa"
+        tools:layout="@layout/fragment_tambah_mahasiswa" />
+    <fragment
+        android:id="@+id/detailMahasiswaFragment"
+        android:name="com.semenam.mahasiswapintar.CRUD_Mahasiswa.Detail_Mahasiswa"
+        android:label="fragment_detail_mahasiswa"
+        tools:layout="@layout/fragment_detail__mahasiswa" />
+    <fragment
+        android:id="@+id/tampilJurusanFragment"
+        android:name="com.semenam.mahasiswapintar.CRUD_Jurusan.Tampil_Jurusan"
+        android:label="fragment_tampil_jurusan"
+        tools:layout="@layout/fragment_tampil__jurusan" >
+        <action
+            android:id="@+id/action_tampilJurusanFragment_to_tambahJurusanFragment"
+            app:destination="@id/tambahJurusanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tambahJurusanFragment"
+        android:name="com.semenam.mahasiswapintar.CRUD_Jurusan.Tambah_Jurusan"
+        android:label="fragment_tambah_jurusan"
+        tools:layout="@layout/fragment_tambah__jurusan" />
+
+    <fragment
+        android:id="@+id/tampilMataKuliahFragment"
+        android:name="com.semenam.mahasiswapintar.CRUD_MataKuliah.Tampil_MataKuliah"
+        android:label="fragment_tampil_matakuliah"
+        tools:layout="@layout/fragment_tampil__mata_kuliah" >
+        <action
+            android:id="@+id/action_tampilMataKuliahFragment_to_tambahMataKuliahFragment"
+            app:destination="@id/tambahMataKuliahFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tambahMataKuliahFragment"
+        android:name="com.semenam.mahasiswapintar.CRUD_MataKuliah.Tambah_MataKuliah"
+        android:label="fragment_tambah_matakuliah"
+        tools:layout="@layout/fragment_tambah__mata_kuliah" />
+
+    <fragment
+        android:id="@+id/about_Me"
+        android:name="com.semenam.mahasiswapintar.AboutMe.About_Me"
+        android:label="About_Me" />
+
+</navigation>

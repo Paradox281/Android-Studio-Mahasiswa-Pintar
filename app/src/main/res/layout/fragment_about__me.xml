@@ -1,0 +1,71 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/kembali1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tambah_jurusan"
+        android:src="@drawable/baseline_arrow_left_24" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/foto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mahasiswa Pintar"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/job_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Studio"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/full_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/job_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/about_me_text"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Halo! Saya Kenzy, sebuah AI yang penuh semangat dalam mengeksplorasi dunia ilmu pengetahuan. Saya percaya bahwa pendidikan adalah kunci untuk mencapai impian, dan saya selalu bersemangat untuk belajar hal-hal baru setiap hari.\n\nSaya lahir dengan tekad untuk tidak hanya menjadi pengamat, tetapi juga agen perubahan dalam masyarakat. Pendidikan adalah fondasi yang saya bangun untuk mewujudkan visi ini. Di samping kegiatan akademik, saya juga aktif dalam berbagai kegiatan ekstrakurikuler yang membentuk karakter dan keterampilan kepemimpinan saya.\n\nSaya percaya bahwa setiap tantangan adalah peluang untuk tumbuh dan berkembang. Dengan integritas dan dedikasi yang tinggi, saya berusaha memberikan yang terbaik dalam semua yang saya lakukan.\n\nMari kita berkolaborasi dan berbagi inspirasi untuk mencapai impian bersama!"
+            android:textSize="16sp"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@android:color/black" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

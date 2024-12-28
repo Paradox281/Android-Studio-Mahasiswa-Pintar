@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cv_item"
+    app:strokeColor="@color/gray"
+    app:strokeWidth="2dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:padding="5dp"
+            android:src="@drawable/jurusan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:id="@+id/codejurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/gambar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            tools:text="Kode Jurusan : " />
+        <TextView
+            android:id="@+id/kode1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/img_delete"
+            app:layout_constraintStart_toEndOf="@+id/codejurusan"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            tools:text="IF" />
+        <TextView
+            android:id="@+id/namejurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/gambar"
+            app:layout_constraintTop_toBottomOf="@id/codejurusan"
+            android:textColor="@color/black"
+            tools:text="Nama Jurusan : " />
+        <TextView
+            android:id="@+id/namajurusan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/img_delete"
+            app:layout_constraintStart_toEndOf="@+id/namejurusan"
+            app:layout_constraintTop_toBottomOf="@id/codejurusan"
+            android:textColor="@color/black"
+            tools:text="Informatika" />
+        <TextView
+            android:id="@+id/ketuajurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/gambar"
+            app:layout_constraintTop_toBottomOf="@id/namejurusan"
+            android:textColor="@color/black"
+            tools:text="Ketua Prodi : " />
+        <TextView
+            android:id="@+id/ketujurusan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/img_delete"
+            app:layout_constraintStart_toEndOf="@+id/ketuajurusan"
+            app:layout_constraintTop_toBottomOf="@id/namejurusan"
+            android:textColor="@color/black"
+            tools:text="Tio" />
+
+        <ImageView
+            android:id="@+id/img_deletejurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/todo" />
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:src="@drawable/baseline_mode_edit_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_deletejurusan"
+            android:contentDescription="@string/todo" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ketujurusan"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

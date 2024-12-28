@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Mahasiswa Pintar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="alamat">Alamat</string>
+    <string name="kembali">Kembali</string>
+    <string name="nim">NIM</string>
+    <string name="nama">Nama</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="foto">Foto</string>
+    <string name="simpan">Simpan</string>
+    <string name="todo">TODO</string>
+    <string name="mahasiswa_pintar">Mahasiswa Pintar</string>
+    <string name="welcome">Welcome!</string>
+    <string name="todo2">TODO</string>
+    <string name="insert_your_account">Insert Your Account</string>
+    <string name="example_211013011">Example:211013011</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="ingat_saya">Ingat Saya</string>
+    <string name="login">Login</string>
+    <string name="search">Search</string>
+    <string name="tambah_mahasiswa">Tambah Mahasiswa</string>
+    <string name="keluar">Keluar</string>
+    <string name="kode_jurusan">Kode Jurusan</string>
+    <string name="nama_jurusan">Nama Jurusan</string>
+    <string name="ketua_prodi">Ketua Prodi</string>
+    <string name="kode_mata_kuliah">Kode Mata Kuliah</string>
+    <string name="nama_mata_kuliah">Nama Mata Kuliah</string>
+    <string name="sks">SKS</string>
+    <string name="tambah_jurusan">Tambah Jurusan</string>
+    <string name="semester">Semester</string>
+</resources>
